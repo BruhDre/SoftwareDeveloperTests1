@@ -9,6 +9,8 @@ The logic for the table and charting are in angularTest1/app/app.ts.
 The css is in angularTest1/app/app.css.
 
 
+![Angular Test Screenshot](angularTest1Screenshot.PNG)
+
 
 # Csharp Test
 
@@ -19,3 +21,6 @@ The controller is in csharpTest1/Controllers/HomeController.cs. The chart logic 
 The EmployeeRecord and Employee classes are in the csharpTest1/Models folder.
 
 The html for the web page is in csharpTest1/Views/Home/Index.cshtml.
+
+
+![C# Test Screenshot](csharpTest1Screenshot.PNG)
