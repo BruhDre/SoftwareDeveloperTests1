@@ -1,0 +1,24 @@
+﻿@model List<CSharpTest1.Models.Employee>
+
+<table class="table table-bordered">
+    <thead class="table-secondary">
+        <tr>
+            <th>Employee</th>
+            <th>Total Time Worked</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var lowHours = item.TotalTimeWorked < 100 ? "table-danger" : "";
+            <tr class="@lowHours">
+                <td>@item.EmployeeName</td>
+                <td>@($"{item.TotalTimeWorked:0}") hrs</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <img src = "/chart-image" alt = "Pie Chart" />
+</div>
