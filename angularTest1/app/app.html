@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-6">
+    <table id="employeeTable" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total Time in Month</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of filterEmployeeList(); track $index) {
+          <tr [class.low-hours]="+sumWorkingHours(item.EmployeeName) < 100">
+            <td>{{item.EmployeeName}}</td>
+            <td>{{sumWorkingHours(item.EmployeeName) | number:'1.0-0'}} hrs</td>
+            <td><a href="?">Edit</a></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="chart-container">
+  <canvas id="employeePieChart"></canvas>
+</div>
+<router-outlet />

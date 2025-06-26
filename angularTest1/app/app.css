@@ -1,0 +1,32 @@
+.low-hours {
+  background-color: #ffcccc;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+thead tr {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+td:first-child, th:first-child {
+  text-align: left;
+}
+td:nth-child(2), td:nth-child(3),
+th:nth-child(2), th:nth-child(3) {
+  text-align: center;
+}
+#employeePieChart {
+    max-height: 600px;
+    max-width: 600px;
+}
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
